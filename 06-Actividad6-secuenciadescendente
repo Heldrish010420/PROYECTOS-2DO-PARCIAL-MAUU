@@ -1,0 +1,29 @@
+//Heldrish Hansell Hernandez Zempoalteca
+//4 ° B Uniersidad tecnologica de tlaxcala
+//programa de una secuencia numerica la cual multiplica umn numero por 3 e inicia una secuencia de dons en dos con el mismo
+//programa que sigue una secuencia descendiente apartir de un numero multiplicado por si mismo
+#include <stdio.h>
+#include <stdlib.h>// bibliotecas a utilizar
+
+int main()
+{
+    int cont=0;//variable de almacenamiento  del contador
+    int a;//varuable
+    int s; //variable de la operacion algebraica
+    int i;//variable de punto de partida
+
+  printf("¿que punto de partida tendra tu secuencia?");// se pide el valor al usuario
+  scanf("%d", &i);//se almacena en la variable de i
+
+  while(cont<=i)//condicion para el ciclo apartir de la variable i
+  {
+    a=cont;//se le asigna valor al contador
+    s=(i*i)-2*a;//operacion correspondiente a la secuencia
+    printf("%d \n", s);//se imprime el resultadp
+    cont=cont+1;//se repite el ciclo
+}
+
+  return 0;
+}
+
+
